@@ -22,3 +22,8 @@ Additional inbox import:
 
 - selected G:/My Drive/00_Inbox source files as
 aw/00_Inbox/`n
+
+Additional project import:
+
+- selected G:/My Drive/01_Projects source files as
+aw/01_Projects/`n

@@ -21,3 +21,8 @@ Additional note:
 
 - The
 aw/00_Inbox/ batch is a direct source-file import from Google Drive and has not been curated beyond exact-file selection.
+
+Additional project-source note:
+
+- The
+aw/01_Projects/ batch is a direct source-file import from Google Drive, preserving MilTech, AI Dev, and NEKOnet grouping.
