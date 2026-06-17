@@ -38,3 +38,7 @@ Full NEKOnet import note:
 Document/style prompt note:
 
 - This batch imports Tools for Thought plus Style Prompts assets and removes the two previously committed large NEKOnet videos from the active tree; see document-style-import-manifest.md for copied/skipped details.
+
+Claude/NotebookLM note:
+
+- This batch imports GitYana project notes and de-duplicates NotebookLM AI Dev notes against existing migrated content; see claude-notebooklm-import-manifest.md.

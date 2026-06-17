@@ -45,3 +45,8 @@ Document and style prompt import:
 - selected Tools for Thought and Style Prompts files imported as raw source material
 - two large NEKOnet video files were removed from the branch before this import
 - import details recorded in document-style-import-manifest.md
+
+Claude and NotebookLM import:
+
+- selected GitYana project notes and NotebookLM AI Dev notes imported with same-content duplicate skipping
+- import details recorded in claude-notebooklm-import-manifest.md
