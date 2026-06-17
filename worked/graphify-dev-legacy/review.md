@@ -26,3 +26,7 @@ Additional project-source note:
 
 - The
 aw/01_Projects/ batch is a direct source-file import from Google Drive, preserving MilTech, AI Dev, and NEKOnet grouping.
+
+Additional document-source note:
+
+- The latest batch includes PDFs and a NotebookLM briefing from Google Drive plus local Downloads, preserved as raw source material for future Graphify extraction.

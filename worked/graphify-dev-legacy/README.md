@@ -27,3 +27,10 @@ Additional project import:
 
 - selected G:/My Drive/01_Projects source files as
 aw/01_Projects/`n
+
+Additional document import:
+
+- selected PDF and NotebookLM files as
+aw/01_Projects/,
+aw/05_tbd/, and
+aw/Downloads/`n
