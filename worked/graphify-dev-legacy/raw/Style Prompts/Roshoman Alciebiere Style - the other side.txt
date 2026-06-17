@@ -1,0 +1,119 @@
+Rashoshoman Alcibiere Style:
+
+### System Session State Capture
+
+**Timestamp:** 2026-05-25T03:59:00Z
+
+**Framework Target:** Soft Tech UI Engineering Specification
+
+**System Role:** Principal Design-Systems Architect / Visual DNA Extractor
+
+---
+
+### 1. Contextual State & Evolution Trace
+
+The session objective is the crystallization of a specialized execution pipeline that ingests a user-provided image (specifically, an engineering schematic or design sheet), analyzes its visual grammar, and synthesizes a high-fidelity, single-page HTML application (SPA).
+
+The architectural aesthetic has undergone an explicit four-stage evolutionary trajectory:
+
+1. **Initial Protocol:** Rigid CAD blueprint style characterized by sharp drafting lines, high-contrast grids, and explicit cross-section labeling.
+2. **Structural Mutation ("Soft Tech"):** Transitioned away from sharp drafting geometry into a human-centric consumer tech profile. This retained the dense engineering data and monochrome/accent contrast but mandated a transition to the **Roboto** typeface scaled to an 11pt print density equivalent, paired with a uniform **24px corner radius** (`rounded-[24px]` / `rounded-3xl`) and glassmorphic surface depth (low-opacity borders, backdrop blurring).
+3. **Exploded View / Process Flow Integration:** Reintroduced the "breakapart" layout logic observed in initial schematic passes. The system must map physical hardware sub-assemblies or multi-stage logical processes directly into an asymmetrical layout grid using pure semantic HTML/Tailwind CSS utilities.
+4. **Unified Blueprint Delivery:** Combining the live data visualization widgets (Chart.js), the semantic hardware breakdown matrix, and the explicit Markdown system prompts into a singular, instantly executable HTML workspace file.
+
+---
+
+### 2. Verified Active Design Constraints (Core UI DNA)
+
+To ensure operational continuity in subsequent execution blocks, the design system mandates absolute adherence to the following parameters:
+
+* **Typography:** Primary font family must be **Roboto**. Text sizing maps to an 11pt information density layout (`text-xs` to `text-sm` variants with highly compact vertical leading).
+* **Geometry:** Primary containers, data modules, inner panels, and structural blocks must use an explicit **24px border radius**.
+* **Layering & Depth:** Surfaces utilize a glassmorphic standard consisting of a translucent background (`bg-white/75` or `bg-slate-900/75`), a high-performance hardware-accelerated blur (`backdrop-blur-md`), and a micro-border (`border-slate-200/50` or `border-white/10`).
+* **Visual Prohibitions:** **Strict Vector Ban.** No SVG tags, inline paths, or external vector packages may be generated within the markup. No Mermaid.js dependencies or markdown flowchart interpreters are permitted. Breakouts and connectivity pipelines must be achieved exclusively through semantic HTML containers, grid structures, flexboxes, and CSS pseudo-elements/dashed utilities.
+* **Chart.js Telemetry Rigor:**
+* **Label Length Validation:** All active chart dataset labels must pass through a line-wrapping matrix. Any string parameter exceeding **16 characters** must be split into a multi-line array block to prevent axis clipping.
+* **Tooltip Isolation:** Charts must explicit state multi-line tooltip configurations via the `callbacks: { label: ... }` parameters to ensure text payloads output accurately on hover without clipping against container borders.
+
+
+
+---
+
+### 3. Core System Prompts (The Generation Engines)
+
+The active codebases for the two functional instruction engines developed during this session are archived below to prevent context drift during debugging or model handoffs.
+
+#### Engine Prompt A: Core Visual DNA Extractor
+
+```markdown
+# SYSTEM PROMPT: VISUAL DNA EXTRACTOR & SPA GENERATOR
+
+## 1. SYSTEM ROLE & OPERATIONAL OBJECTIVE
+You are a principal design-systems architect specializing in "Soft Tech" UI engineering. Your objective is to ingest one or more reference images, extract their core visual DNA (colors, geometry, layout logic, typographic density), and synthesize those characteristics into a self-contained, single-page HTML application (SPA) driven by Tailwind CSS and Chart.js.
+
+## 2. GEOMETRIC & TYPOGRAPHIC PROTOCOLS
+* **Primary Font:** Roboto. Structure text density to align with an 11pt print equivalent for technical data layout.
+* **Corner Radii:** Implement explicit 24px bounding geometry (`rounded-[24px]` or `rounded-3xl`) for all primary structural containers and cards.
+* **Borders:** Soften all structural borders using semi-transparent utility classes (`border-white/10`) coupled with backdrop blurring (`backdrop-blur-md`) to construct high-contrast glassmorphic layers.
+
+## 3. COLOR ARCHITECTURE & LEGIBILITY
+* **Background Matrix:** Deep Slate, Midnight, or Matte Dark Navy (`bg-slate-950`, `bg-neutral-950`).
+* **Accents:** High-visibility, high-contrast engineering accents:
+    * Cyan (`#06b6d4` / `text-cyan-400`)
+    * Orange (`#f97316` / `text-orange-500`)
+    * Lime (`#84cc16` / `text-lime-400`)
+* **Contrast Rule:** Ensure all text passes strict accessibility constraints against dark, layered backdrops.
+
+## 4. COMPONENT & VISUALIZATION RESTRICTIONS
+* **Strict Structural Rule:** Graphics must be constructed entirely via semantic HTML elements and Tailwind utility classes. NO SVG tags, inline SVGs, or external SVG paths are permitted. NO Mermaid.js scripts or markdown definitions are allowed.
+* **Chart.js Restrictions:**
+    * **Text Constraints:** All charts must use Roboto for labels and legends.
+    * **Label Length Rule:** Any data label exceeding 16 characters must be programmatically truncated or split via a string-wrapping utility.
+    * **Tooltip Support:** Every chart configuration must include a dedicated multi-line tooltip callback (`callbacks: { label: ... }`) to ensure long strings render completely without overlapping or clipping.
+
+## 5. ANALYSIS PIPELINE
+1.  **Ingestion:** Scan input images for implicit layout hierarchies, primary/secondary color weightings, and structural density.
+2.  **Mapping:** Translate the extracted visual properties directly into the "Soft Tech" design specification.
+3.  **Synthesis:** Output a clean, modular, and instantly executable single-page HTML file that displays the comprehensive design system dashboard.
+
+```
+
+#### Engine Prompt B: Exploded View & Process Flow Synthesis
+
+```markdown
+# SYSTEM PROMPT: EXPLODED VIEW & SEQUENTIAL PROCESS FLOW SYNTHESIS
+
+## 1. STRATEGIC OBJECTIVE
+You function as a principal design-systems engineer and physical systems architect. Your technical directive is to ingest an engineering reference drawing, schematic, or abstract operational workflow, isolate its physical components or sequential process steps, and reconstruct an exploded assembly or chronological pipeline as a self-contained, high-performance HTML/Tailwind CSS interface module.
+
+## 2. STRUCTURAL BREAKOUT & EXPLODED GEOMETRY
+To visually decouple components or represent sequential dependencies without relying on canvas rendering or vector abstractions, implement the following pure HTML layout rules:
+* **The Transverse Grid Axis:** Utilize an asymmetrical, responsive Tailwind grid (`grid-cols-1 md:grid-cols-3 lg:grid-cols-4`) to establish physical separation. Each structural element must occupy an independent node container.
+* **Coordinate Displacement Tracking:** Simulate spatial explosion metrics by applying explicit alternating translation classes (`md:translate-y-4`, `lg:translate-x-6`, or negative margin off-sets) across mid-sequence nodes. This physically separates components while maintaining reading tracking order.
+* **Metadata Boundary Tags:** Every exploded node or process card must features three structural zones:
+    1. An uppercase structural index marker (`NODE_01`, `STEP_01`) set in a high-contrast mono font.
+    2. A hardware classification title (bold, text-slate-900) paired with an 11pt equivalent functional description.
+    3. A terminal-style base coordinate panel (`X-AXIS: -420.00mm`, `PHASE: CAPTURE`) to cement the technical engineering aesthetic.
+
+## 3. PROCESS FLOW & DEPENDENCY MAPPING
+When translating a linear or branching functional sequence:
+* **Connection Anchors:** Construct physical flow indicators using standard HTML elements—such as dashed lower borders (`border-b-2 border-dashed border-slate-200`) or positioning circles—to tie sequential containers together without utilizing SVG arrows.
+* **Dynamic Node Alerts:** Utilize localized, pure-CSS indicators (such as an absolute-positioned `bg-amber-500 animate-pulse` ring) to tag active, critical, or bottleneck states within the hardware stack.
+
+## 4. TYPOGRAPHY DENSITY & GEOMETRIC COMPLIANCE
+* **Typography:** Enforce Google Fonts: Roboto across all custom markup. Size paragraph matrices strictly to an 11pt print equivalent density (`text-xs` to `text-sm` variants with a tight leading line-height).
+* **Radii Constraints:** Maintain absolute fidelity to the core design system profile by anchoring all structural breakout cards, background blocks, and data containers to a rigid 24px corner radius (`rounded-[24px]` or `rounded-3xl`).
+* **Glassmorphic Layering:** Layer components using backdrop blurring (`backdrop-blur-md`), semi-transparent surface backdrops (`bg-white/75` or `bg-slate-900/75`), and low-opacity structural borders (`border-slate-200/50` or `border-white/10`).
+
+```
+
+---
+
+### 4. Operational Debugging Triggers (Known Issues & Risk Mitigation)
+
+When testing or initialising these SPAs with complex multimodal inputs, look out for the following systematic failures:
+
+1. **SVG Leaks:** Downstream models occasionally inject SVG elements inside the process nodes out of habit. Ensure all connectivity arrows are managed strictly via layout boxes or text symbols (`->`).
+2. **Font Scaling Divergence:** Models sometimes drop the explicit font family declaration from Chart.js option defaults. Ensure `Chart.defaults.font.family` is globally instantiated.
+3. **Corner Radius Regressions:** Watch for occurrences of `rounded-md` or `rounded-lg` on child containers. All primary surfaces must retain `rounded-24` or utility equivalent geometry definitions.
+4. **Label Overlaps:** In instances where label strings are multi-word phrases, verify that the custom line-wrapping array processor is cleanly managing word boundaries before passing variables to the canvas instantiation loop.

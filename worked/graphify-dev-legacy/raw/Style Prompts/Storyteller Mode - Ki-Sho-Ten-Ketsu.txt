@@ -1,0 +1,9 @@
+"Act as a master storyteller.
+
+Create an outline for a 10-slide presentation on [Topic] using the Japanese 'Ki-Sho-Ten-Ketsu' narrative structure.
+Slide 1: Ki (Introduce the background and situation softly).
+Slides 2-5: Sho (Develop the topic, provide data and context).
+Slides 6-8: Ten (Introduce an unexpected twist, a new perspective, or a sudden challenge).
+Slides 9-10: Ketsu (Bring it together into a solid, actionable conclusion).
+
+Keep the tone respectful, structured, and deliberate."

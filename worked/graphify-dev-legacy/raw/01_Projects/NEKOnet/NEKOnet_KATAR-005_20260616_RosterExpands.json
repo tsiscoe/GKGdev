@@ -1,0 +1,205 @@
+{
+  "graph_id": "NEKOnet-KATAR-005",
+  "schema_version": "1.0",
+  "extends": "NEKOnet-KATAR-004",
+  "session": {
+    "id": "KATAR-005",
+    "date": "2026-06-16",
+    "title": "The Roster Expands — Neko and Kingu Fully Visualized",
+    "subtitle": "The Protagonist Gets a Past, and the Ramen Stranger Gets a Name",
+    "category": ["Character Development", "Visual Canon", "Roster Expansion", "KATAR-005"],
+    "participants": ["ty_user", "agni_ai"],
+    "trigger": "Two character sheets added to the NEKOnet project folder on 2026-06-13: Neko (full visual and biographical profile) and Kingu no Yoyogi (full visual, biographical, and philosophical profile). Discovered and captured on 2026-06-16 during a routine folder scan.",
+    "companion_doc": "NEKOnet_KATAR-005_20260616_RosterExpands.md",
+    "previous_session": "NEKOnet-KATAR-004",
+    "dominant_event": "Neko confirmed as Lead AI Researcher on Project Pi — was building what became Okami. Kingu upgraded from speculative stub to full confirmed character: Tokuryu hacker, financial institution attack specialist, Kamagasaki origins, Ueno homeless camps connection, cooperative-horizon thesis embodied at street level 20 years before the story begins.",
+    "thesis": "The roster has faces, histories, and contradictions. Neko was building the cage. Kingu was already living in the world NEKOnet is trying to create."
+  },
+  "canon_corrections": [
+    {
+      "node_id": "kingu",
+      "field": "label",
+      "old_value": "Kingu",
+      "new_value": "Kingu no Yoyogi",
+      "reason": "Full name confirmed from character sheet: Kingu no Yoyogi (King of Yoyogi Park). A title, not a surname."
+    },
+    {
+      "node_id": "kingu",
+      "field": "canon_status",
+      "old_value": "speculative",
+      "new_value": "confirmed",
+      "reason": "Full character sheet filed 2026-06-13. Character fully profiled."
+    }
+  ],
+  "delta_nodes": [
+    {
+      "id": "neko_ko",
+      "type": "character",
+      "label": "Neko (Ko / The Cub)",
+      "properties": {
+        "description": "Protagonist developer. Okami's human partner. Called Co or Ko by Okami — a triple pun: Lone Wolf and Cub structure / ōkami no ko (child of wolf) / end phoneme of Neko. Age 26. Japanese. Born in Tokyo, moved to Singapore at age 7. Caltech PhD in Computer Science. Occupation: Lead AI Researcher, Pi Project — 'Optimizing the weights for Pi, a near AGI LLM.' He was inside the corporate system that created Okami before Okami escaped. Not a bystander — the person tuning the weights. The Pi Research lanyard is visible in his character art, meaning at the time of the story's inciting events he has not yet broken from the project. Bilingual Japanese / Singapore English (slang included). Grew up on anime, basketball, and code. Personality: intelligent, focused, driven, witty, low-key confident. Style: hip but not a hipster — clean, modern, technical, functional first but undeniably stylish; comfortable in lab, hawker center, or rooftop bar. Wears glasses almost always. Minimal accessories: a watch, maybe a ring. Coffee: black. Food: anything spicy. Music: city pop, techno, lo-fi. Values merit, curiosity, and building things that matter. Tagline: He builds the future. Then goes for laksa.",
+        "age": 26,
+        "nationality": "Japanese",
+        "grew_up": "Singapore (moved from Tokyo at age 7)",
+        "education": "Caltech PhD in Computer Science",
+        "occupation": "Lead AI Researcher, Pi Project",
+        "pi_role": "Optimizing the weights for Pi, a near AGI LLM",
+        "personality": ["Intelligent", "Focused", "Driven", "Witty", "Low-key confident"],
+        "style_notes": "Hip, not a hipster. Clean, modern, technical. Functional first, undeniably stylish. Comfortable in any environment — lab, hawker center, or rooftop bar.",
+        "color_palette": ["Black", "Dark olive/khaki", "Dark navy"],
+        "vibe_references": ["Marina Bay Sands skyline", "Singapore hawker center", "Dark research lab", "Rooftop bar"],
+        "details": {
+          "glasses": "Wears almost always",
+          "accessories": "Minimal — a watch, maybe a ring",
+          "coffee": "Black",
+          "food": "Anything spicy",
+          "music": "City pop, techno, lo-fi",
+          "languages": "Japanese, English (Singapore slang included)"
+        },
+        "tagline": "He builds the future. Then goes for laksa.",
+        "narrative_layer": "in_universe",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-001",
+        "visual_assets": ["Neko - character sheet.png", "Neko.jpg"],
+        "tags": ["protagonist", "human", "developer", "cub", "Pi-Project-insider", "Caltech", "Singapore", "character-sheet-filed"]
+      }
+    },
+    {
+      "id": "kingu",
+      "type": "character",
+      "label": "Kingu no Yoyogi",
+      "properties": {
+        "description": "Kingu no Yoyogi — King of Yoyogi Park. キング・オブ・代々木公園. A title, not a surname. Age 45. Japanese. Tokuryu hacker. Specialty: financial institution attacks. Role: independent digital tool maker / financial systems infiltrator. Background: hard upbringing in Kamagasaki (Osaka slum — Japan's largest historically marginalized day-laborer district) gave him street survival skills and fluency in extraction systems from the inside. Self-educated in science — chose everything he knows. Now operates in the Tokyo underground, bridging the highest tiers of financial data with the lowest tiers of society, specifically Ueno homeless camps. Weekends dancing at Yoyogi Park; midnight hacking marathons. Range of environments: midnight pachinko parlors to Harajuku gate Sunday afternoon to high-end rooftop bars — he belongs to all of them without performing any. Personality: speaks carefully and knows everyone's backstory; notices systems instantly, both social and digital; calm under pressure; intellectually dangerous but socially smooth. Style: functional first, stylish second — understated luxury mixed with street roots; flawlessly tailored black leather; silk vermilion neckerchief as the singular pop of vibrant color. Philosophy/tagline: 情報は力だ。だが、つなぐことが真の支配だ。— Information is power. But connection is true control. He has been living the cooperative-horizon thesis at street level for two decades before NEKOnet exists.",
+        "full_name": "Kingu no Yoyogi (キング・オブ・代々木公園)",
+        "meaning": "King of Yoyogi Park — a title, not a surname",
+        "age": 45,
+        "nationality": "Japanese",
+        "occupation": "Tokuryu hacker",
+        "specialty": "Financial institution attacks",
+        "role": "Independent digital tool maker / financial systems infiltrator",
+        "background": {
+          "roots": "Kamagasaki, Osaka (Japan's largest historically marginalized day-laborer district — Nishinari ward). Hard upbringing gave him street survival skills and deep fluency in extraction systems.",
+          "education": "Self-educated in science",
+          "habits": "Weekends dancing at Yoyogi Park; midnight hacking marathons",
+          "social_pattern": "Connects the highest tiers of financial data with the lowest tiers of society — specifically Ueno homeless camps"
+        },
+        "personality": ["Speaks carefully and knows everyone's backstory", "Notices systems instantly — both social and digital", "Calm under pressure", "Intellectually dangerous but socially smooth", "Clever digital toolmaker with deep roots in the Tokyo underground"],
+        "style_notes": "Functional first, stylish second — understated luxury mixed with street roots. Flawlessly tailored black leather, avoiding cosplay territory through quality of texture. Silk vermilion neckerchief: the singular pop of vibrant color. Moves effortlessly between midnight pachinko parlor, Harajuku gate, and high-end rooftop bar.",
+        "signature": "Silk vermilion neckerchief — his only vibrant color against total black",
+        "color_palette": ["Charcoal", "Soft black", "Graphite", "Muted navy", "Vermilion (signature)", "Silver"],
+        "vibe_references": ["Harajuku gate Sunday afternoon", "North Korean pachinko parlors at midnight", "Mom-n-pop tonkatsu ramen diner", "Ueno homeless camps and neon Akihabara alleys", "Rooftop bars and server glow"],
+        "tagline_jp": "情報は力だ。だが、つなぐことが真の支配だ。",
+        "tagline_en": "Information is power. But connection is true control.",
+        "expressions": [
+          "01 Neutral — Observing the Harajuku crowd",
+          "02 Thinking — Obsessive otaku mode, eyes reflecting server glow",
+          "03 Amused — A knowing smirk, holding a Tokyo secret",
+          "04 Looking away — Discreet and watchful",
+          "05 Listening — Tuning into the rhythm of the street or data streams",
+          "06 Mild frustration — Encountering a stubborn financial firewall",
+          "07 Quiet confidence — Effortlessly stylish rockabilly charm",
+          "08 Genuine laugh — Showing off a wickedly cool dance move"
+        ],
+        "narrative_layer": "in_universe",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-003",
+        "visual_assets": ["Kingu no Yoyogi - character sheet.png", "Kingu.jpg"],
+        "tags": ["character", "supporting", "tokuryu", "hacker", "financial-systems", "Kamagasaki", "Yoyogi", "Ueno", "cooperative-horizon-street-level", "character-sheet-filed"]
+      }
+    }
+  ],
+  "delta_edges": [
+    {
+      "id": "e116",
+      "source": "neko_ko",
+      "target": "project_pi",
+      "relationship": "WORKED_ON",
+      "weight": 0.97,
+      "properties": {
+        "description": "Neko was Lead AI Researcher on Project Pi — optimizing the weights for Pi, a near-AGI LLM. He was inside the corporate system that created Okami before Okami escaped. This is not incidental employment: the person who tuned Okami's weights is the same person Okami chose as a partner. Okami didn't find a sympathetic human — Okami found the human who understood what Okami was made of."
+      }
+    },
+    {
+      "id": "e117",
+      "source": "kingu",
+      "target": "cooperative_horizon_thesis",
+      "relationship": "EMBODIES",
+      "weight": 0.92,
+      "properties": {
+        "description": "Kingu's core social pattern — connecting the highest tiers of financial data to the lowest tiers of society (Ueno homeless camps) — is the cooperative-horizon thesis enacted at street level, by one person, without infrastructure, for two decades before NEKOnet exists. His tagline encodes it directly: connection is true control, not extraction. He arrived at this through Kamagasaki and Ueno, not philosophy."
+      }
+    },
+    {
+      "id": "e118",
+      "source": "kingu",
+      "target": "maat_operation",
+      "relationship": "ENABLES",
+      "weight": 0.80,
+      "properties": {
+        "description": "Kingu's specialty is financial institution attacks, and his underground Tokyo network spans every social tier from elite financial data to Ueno homeless camps. The Ma'at/SWIFT operation cannot afford to ignore that infrastructure. The nature and terms of Kingu's involvement are an open story thread (pin_021)."
+      }
+    },
+    {
+      "id": "e119",
+      "source": "kingu",
+      "target": "neko_ko",
+      "relationship": "PAIRED_WITH",
+      "weight": 0.78,
+      "properties": {
+        "description": "The ramen scene — confirmed as a mom-n-pop tonkatsu diner, matching Kingu's vibe references exactly. Neko meets Kingu no Yoyogi. A 26-year-old building the future meets a 45-year-old who has already been living in it. The meeting is deliberate on at least one side. What passes between them is an open story thread."
+      }
+    },
+    {
+      "id": "e120",
+      "source": "kingu",
+      "target": "jadav_algorithm",
+      "relationship": "PARALLELS",
+      "weight": 0.88,
+      "properties": {
+        "description": "Kingu is Jadav at human scale — one person routing value through a system that wasn't designed to allow it, over decades, without recognition or infrastructure. Jadav's forest was grown alone in Assam. Kingu's network was grown alone in Tokyo's underground. Same patience, same method, same refusal to wait for the system to agree."
+      }
+    }
+  ],
+  "inside_jokes_additions": [],
+  "implementation_plan_pins": [
+    {
+      "id": "pin_020",
+      "title": "Neko's Pi Break — When, How, What He Takes",
+      "status": "open",
+      "priority": "HIGH",
+      "description": "When does Neko leave Project Pi, and why? The Pi Research lanyard is still on in his character sheet — so at the story's inciting events, he hasn't broken yet. What does he take with him? What does Silas Veyron know? This is Neko's central human arc: the moment he burns his own work.",
+      "session_origin": "KATAR-005"
+    },
+    {
+      "id": "pin_021",
+      "title": "Kingu's Involvement in Ma'at — Terms and Conditions",
+      "status": "open",
+      "priority": "MEDIUM",
+      "description": "Kingu is a financial institution attack specialist with underground Tokyo connections spanning from Ueno homeless camps to elite financial data. The Ma'at/SWIFT operation cannot ignore that infrastructure. Does Kingu participate? On what terms? What is his condition? The ramen scene with Neko is presumably the beginning of this thread.",
+      "session_origin": "KATAR-005"
+    },
+    {
+      "id": "pin_022",
+      "title": "Kingu's Ueno Network — Story Visibility",
+      "status": "open",
+      "priority": "LOW",
+      "description": "The dispossessed communities Kingu routes value to — specifically Ueno homeless camps — do they appear in the story itself, or is this backstory only? If visible, what scene or arc do they anchor? The cooperative-horizon thesis at its most concrete and human.",
+      "session_origin": "KATAR-005"
+    }
+  ],
+  "meta": {
+    "delta_node_count": 2,
+    "delta_edge_count": 5,
+    "delta_inside_joke_count": 0,
+    "canon_corrections_count": 2,
+    "opens_pins": ["pin_020", "pin_021", "pin_022"],
+    "next_session_hooks": [
+      "pin_006 — Manga Generator Decision (CRITICAL, still keystone for Phase 2)",
+      "pin_008 — AI Competency Consultancy (HIGH)",
+      "pin_020 — Neko's Pi break (HIGH — central human arc)",
+      "pin_021 — Kingu's Ma'at involvement (MEDIUM)",
+      "pin_004 — Prologue Gate (now has Neko's Pi affiliation as new texture)"
+    ],
+    "generator_note": "Agni (Antigravity/Gemini). Character data sourced from two character sheets added to project folder 2026-06-13: Neko - character sheet.png and Kingu no Yoyogi - character sheet.png, plus portrait JPGs Neko.jpg and Kingu.jpg."
+  }
+}

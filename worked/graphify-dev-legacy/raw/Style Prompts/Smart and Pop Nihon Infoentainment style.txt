@@ -1,0 +1,4 @@
+"Design a presentation deck with a 'smart and pop business infotainment' aesthetic.
+Use a color palette of pure white or cool gray for backgrounds, jet-black for text, and Anthropic Orange or alert red for accents.
+Use extreme jump ratios for typography (headlines must be massive and occupy 30-50% of the screen).
+Incorporate stylized, blown-out background photos, monochrome cutouts of people, and fluorescent marker-style lines to highlight keywords.

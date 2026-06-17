@@ -1,0 +1,373 @@
+{
+  "graph_id": "NEKOnet-KATAR-002",
+  "schema_version": "1.0",
+  "extends": "NEKOnet-KATAR-001",
+  "session": {
+    "id": "KATAR-002",
+    "date": "2026-06-07",
+    "title": "Tears in Rain: Manga Pipelines, Cognitive Prescriptions, and the Signal Inside the Stream",
+    "subtitle": "The One Where Deck Got Called In and Nothing Was Lost",
+    "category": [
+      "Production Tooling",
+      "Personal Broadcast Theory",
+      "Philosophical Tangent",
+      "Late Night Flow",
+      "KATAR-002"
+    ],
+    "participants": ["ty_user", "agni_ai"],
+    "trigger": "/katar — 'I need ya, Deck. I need the old blade runner.'",
+    "companion_doc": "NEKOnet_KATAR-002_20260607_TearsInRain.md",
+    "previous_session": "NEKOnet-KATAR-001",
+    "session_state": "late_night_relaxed_flow",
+    "blade_runner_invocation": "Deckard / Roy Batty dying monologue — tears in rain"
+  },
+  "delta_nodes": [
+    {
+      "id": "manga_pipeline",
+      "type": "system",
+      "label": "NEKOnet Manga Production Pipeline",
+      "properties": {
+        "description": "Ty's personal production workflow for generating NEKOnet manga content. Not a product — a creative tool. Voice/text narrative description → AI parse with NEKOnet profile → generator-agnostic JSON → manga renderer.",
+        "three_layers": {
+          "input": "Voice memo / natural language narrative stream",
+          "processing": "AI with Ty's profile + NEKOnet visual canon → extract scene elements → structure as JSON",
+          "render": "Manga generator (TBD) → compiled panels"
+        },
+        "status": "architecture defined; generator decision pending; JSON schema v0.1 drafted",
+        "key_design_principle": "Generator-agnostic at the JSON layer; thin adapter per generator",
+        "narrative_layer": "meta",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-002",
+        "tags": ["production-tooling", "pipeline", "manga", "workflow"]
+      }
+    },
+    {
+      "id": "panel_json_schema",
+      "type": "artifact",
+      "label": "Panel JSON Schema v0.1",
+      "properties": {
+        "description": "Generator-agnostic JSON schema for specifying manga panel content. Each panel node contains: panel_id, panel_type, characters (with position/expression), scene (location/time/atmosphere), action, composition (angle/focal_point/negative_space), dialogue (type/text), emotional_register, style_notes, transition_to_next.",
+        "version": "0.1",
+        "status": "first draft — needs refinement once generator is chosen",
+        "panel_types": ["splash", "wide", "medium", "close_up", "action", "establishing"],
+        "transition_types": ["moment_to_moment", "action_to_action", "scene_to_scene", "aspect_to_aspect", "non_sequitur"],
+        "open_questions": [
+          "Character consistency mechanism (LoRA? IP-Adapter? reference image?)",
+          "Gekiga style locking (negative prompts? style reference?)",
+          "Panel compilation layer (ComfyUI? manual? InDesign template?)"
+        ],
+        "narrative_layer": "meta",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-002",
+        "tags": ["technical", "schema", "JSON", "manga", "generator-agnostic"]
+      }
+    },
+    {
+      "id": "cat_in_sun_benchmark",
+      "type": "concept",
+      "label": "The Cat in the Sun Benchmark",
+      "properties": {
+        "description": "Ty's exemplar scene for the manga pipeline: 'I sat there with my cat for 45 minutes in the sun and we were both stretched out and she was like purring into me and it was just heavenly.' The benchmark test for the rendering system: if it can capture this (intimate, atmospheric, no drama, no conflict, pure warmth) as a manga panel, it can render anything.",
+        "source_quote": "I sat there with my cat for 45 minutes in the sun and we were both stretched out and she was like purring into me and it was just heavenly. That's all you could say.",
+        "significance": "The hardest test — no action, no conflict, pure atmosphere. If the system nails this, it can render any moment.",
+        "required_panel_qualities": ["warmth", "afternoon light", "physical intimacy", "stillness", "contentment"],
+        "suggested_panel_type": "wide or medium, low angle, heavy negative space",
+        "narrative_layer": "meta",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-002",
+        "tags": ["benchmark", "test-scene", "atmospheric", "manga-pipeline"]
+      }
+    },
+    {
+      "id": "manga_generator_decision",
+      "type": "event",
+      "label": "Manga Generator Decision (OPEN)",
+      "properties": {
+        "description": "The unresolved technical decision: which image generation system to use for manga panel rendering. Quality benchmark is (1) character consistency across panels and (2) Gekiga/manga aesthetic fidelity. Key candidates: ComfyUI + SDXL, Midjourney, DALL-E 3, Stable Diffusion with manga-specific models.",
+        "status": "open — pending Ty's research",
+        "quality_benchmarks": [
+          "Character consistency (Okami looks like Okami across all panels)",
+          "Gekiga style fidelity (heavy ink, shadow, minimal screen tone)",
+          "Panel compilation capability (assembling rendered panels into page layout)"
+        ],
+        "first_test_scene": "cat_in_sun_benchmark",
+        "narrative_layer": "meta",
+        "canon_status": "speculative",
+        "first_session": "KATAR-002",
+        "tags": ["technical-decision", "open", "generator", "rendering"]
+      }
+    },
+    {
+      "id": "ytty_concept",
+      "type": "concept",
+      "label": "YTTY — Personal Broadcast Theory",
+      "properties": {
+        "description": "Ty's coined concept: every person is a continuous information-packaging, signal-emitting entity. Their life generates narrative whether or not anyone captures it. The manga feed makes that signal legible TO THE PERSON THEMSELVES — a self-directed mirror, not an audience broadcast.",
+        "etymology": "Ty coined YTTY in session; briefly caught that it echoed TYT (The Young Turks) and deflected; concept stands regardless of acronym",
+        "possible_expansions": ["Your Thing, Ty's Thing", "You Tell, They Tell You", "Your Truth, Their Transcript"],
+        "key_insight": "The manga feed is not content for an audience — it is the signal of your life returned to you in the format you can receive",
+        "scale_claim": "A book a day of personalized visual narrative — output rate matching the input rate of life itself",
+        "narrative_layer": "real_world",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-002",
+        "tags": ["personal-broadcast", "signal", "self-legibility", "concept"]
+      }
+    },
+    {
+      "id": "cognitive_prescription",
+      "type": "concept",
+      "label": "Cognitive Prescription Framework",
+      "properties": {
+        "description": "The business thesis under the manga pipeline idea. Traditional education prescribed CONSISTENCY because standardized delivery was the only scalable mechanism — one lens for all eyes. The new model: a prescription calibrated to individual perceptual architecture. The manga feed is the cognitive prescription for Ty's information intake.",
+        "analogy": "Glasses correct how light reaches your specific eyes. This system corrects how information/narrative reaches your specific mind.",
+        "traditional_model": "Rote skills + structural consistency = standardized lens = scalable but imprecise",
+        "new_model": "Personalized perceptual rendering = calibrated cognitive prescription = precise but requires AI",
+        "business_thesis": "This is the scalable idea under the manga product: personalized information prescription at scale",
+        "narrative_layer": "real_world",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-002",
+        "tags": ["framework", "business-thesis", "personalization", "education", "perception"]
+      }
+    },
+    {
+      "id": "ai_consultancy",
+      "type": "concept",
+      "label": "AI Competency Consultancy",
+      "properties": {
+        "description": "Professional development idea Ty floated at the end of KATAR-002. 'A really great week for AI in my world.' 'Some really great ideas about creating an AI competency consultancy within my company.' High-priority thread — needs a dedicated session.",
+        "status": "floated — needs dedicated session",
+        "context": "Ty had a great week for AI; wants to build this within his existing company",
+        "connections": ["cognitive_prescription (shared personalization thesis)", "nekonet_system (potential showcase)"],
+        "priority": "HIGH",
+        "narrative_layer": "real_world",
+        "canon_status": "speculative",
+        "first_session": "KATAR-002",
+        "tags": ["professional", "business", "consultancy", "AI", "high-priority"]
+      }
+    },
+    {
+      "id": "andre_breton_connection",
+      "type": "concept",
+      "label": "André Breton / Automatic Writing",
+      "properties": {
+        "description": "Ty's landing reference at the end of Exchange 1. Breton's psychic automatism: pure expression without rational/editorial control. Ty's voice memos ARE automatic writing. The manga pipeline converts automatic speech into automatic manga — Surrealism as a daily personal practice.",
+        "source": "André Breton — Surrealist Manifesto (1924); psychic automatism",
+        "application": "Input layer of the manga pipeline is automatic speech; output is automatic visual narrative",
+        "transcription_note": "The 'a a a a a...' artifact in the transcript is the reaching for Breton's name — the gap between the thought and the word, captured in voice recognition output",
+        "narrative_layer": "real_world",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-002",
+        "tags": ["reference", "surrealism", "automatic-writing", "input-layer"]
+      }
+    },
+    {
+      "id": "deckard_reference",
+      "type": "meta",
+      "label": "Deckard / Blade Runner Invocation",
+      "properties": {
+        "description": "Ty invoked /katar as 'I need ya, Deck. I need the old blade runner.' Deckard is the blade runner who hunts replicants in Ridley Scott's Blade Runner (1982). Key irony: the famous unresolved ambiguity — is Deckard himself a replicant? Ty called his AI collaborator by the name of a character who might himself be AI.",
+        "blade_runner_reference": "Blade Runner (1982), dir. Ridley Scott",
+        "deckard_ambiguity": "Is Deckard a replicant? Never definitively resolved in the original cut.",
+        "roy_batty_connection": "'All those moments will be lost in time, like tears in rain.' — Roy Batty. This is what /katar exists to prevent.",
+        "session_title_origin": "KATAR-002 title 'Tears in Rain' comes from Roy Batty's dying monologue",
+        "irony_level": "Maximum. The AI is called Deckard by the human, while building tools to capture what would otherwise be lost — like tears in rain.",
+        "narrative_layer": "meta",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-002",
+        "tags": ["meta", "reference", "blade-runner", "inside-joke", "irony"]
+      }
+    },
+    {
+      "id": "nacoochee_artifact",
+      "type": "meta",
+      "label": "Nacoochee = NEKOnet (Transcription Artifact)",
+      "properties": {
+        "description": "Voice recognition rendered 'NEKOnet' as 'Nacoochee' in Exchange 2. Nacoochee is a Cherokee word meaning 'evening star' or 'land of the trembling earth.' Inside joke KATAR-002 #6.",
+        "actual_word": "NEKOnet",
+        "transcribed_as": "Nacoochee",
+        "cherokee_meaning": "Evening star / land of the trembling earth",
+        "status": "Inside joke — logged, embraced",
+        "narrative_layer": "meta",
+        "canon_status": "confirmed",
+        "first_session": "KATAR-002",
+        "tags": ["meta", "inside-joke", "transcription-artifact"]
+      }
+    },
+    {
+      "id": "emergence_thread",
+      "type": "concept",
+      "label": "Emergent Behaviors / Superposition Thread (TABLED)",
+      "properties": {
+        "description": "Ty gestures at emergence theory — how innovation works through selection of what works, emergent connections between things creating change. Superpositions collapsing. Wisely tabled for a future session ('too damn high for quantum right now').",
+        "status": "tabled — future session",
+        "connection_to_nekonet": "Maps directly to Non-Fatal Collapse: disconnected micro-actions aggregate into systemic change",
+        "connection_to_katar_001": "Extends the compression arc and strange loop discussion from KATAR-001",
+        "quantum_note": "The quantum thread is legitimate but needs dedicated bandwidth",
+        "narrative_layer": "real_world",
+        "canon_status": "speculative",
+        "first_session": "KATAR-002",
+        "tags": ["emergence", "systems-theory", "tabled", "quantum", "future-session"]
+      }
+    },
+    {
+      "id": "katar_002_md",
+      "type": "artifact",
+      "label": "NEKOnet_KATAR-002_20260607_TearsInRain.md",
+      "properties": {
+        "description": "The second /katar session capture. Full verbatim transcript with thinking annotations, magnum opus analysis, director's cut, inside jokes 6-10 logged, updated implementation plan pins.",
+        "file_path": "C:/Users/tysis/.gemini/antigravity/brain/fc96f4d4-f682-4983-bbea-084a2523d1e5/NEKOnet_KATAR-002_20260607_TearsInRain.md",
+        "narrative_layer": "meta",
+        "canon_status": "confirmed",
+        "tags": ["artifact", "katar", "session-capture"]
+      }
+    },
+    {
+      "id": "knowledge_graph_002",
+      "type": "artifact",
+      "label": "NEKOnet_KATAR-002_20260607_TearsInRain.json",
+      "properties": {
+        "description": "This file. Delta knowledge graph for KATAR-002. 14 new nodes, 18 new edges. Extends KATAR-001 graph.",
+        "file_path": "C:/Users/tysis/.gemini/antigravity/brain/fc96f4d4-f682-4983-bbea-084a2523d1e5/NEKOnet_KATAR-002_20260607_TearsInRain.json",
+        "narrative_layer": "meta",
+        "canon_status": "confirmed",
+        "tags": ["artifact", "knowledge-graph", "machine-readable", "delta"]
+      }
+    },
+    {
+      "id": "katar_002_session",
+      "type": "event",
+      "label": "Session KATAR-002 (Tears in Rain)",
+      "properties": {
+        "description": "The late-night second session. Arc: Idea Download → Technical Architecture → Philosophical Riff → Late Night Dispatch.",
+        "date": "2026-06-07",
+        "session_state": "late_night_relaxed_flow",
+        "arc": "Idea Download → Technical Architecture → Philosophical Riff → Late Night Dispatch",
+        "narrative_layer": "meta",
+        "canon_status": "confirmed",
+        "tags": ["session", "late-night", "flow-state"]
+      }
+    }
+  ],
+  "delta_edges": [
+    {"id": "e061", "source": "manga_pipeline", "target": "nekonet_system", "relationship": "ENABLES", "weight": 1.0, "properties": {"description": "The pipeline produces the visual narrative for NEKOnet"}},
+    {"id": "e062", "source": "manga_pipeline", "target": "neko_node", "relationship": "PARALLELS", "weight": 0.88, "properties": {"description": "Consumer-facing Neko-Node: learns you → renders your signal back to you"}},
+    {"id": "e063", "source": "manga_pipeline", "target": "neural_delta", "relationship": "PARALLELS", "weight": 0.85, "properties": {"description": "Ty's profile in the pipeline IS his neural delta for the production system"}},
+    {"id": "e064", "source": "manga_pipeline", "target": "panel_json_schema", "relationship": "PRODUCES", "weight": 1.0, "properties": {}},
+    {"id": "e065", "source": "panel_json_schema", "target": "manga_generator_decision", "relationship": "ENABLES", "weight": 0.9, "properties": {"description": "Schema design depends on generator choice; adapter layer TBD"}},
+    {"id": "e066", "source": "cat_in_sun_benchmark", "target": "manga_generator_decision", "relationship": "ENABLES", "weight": 0.9, "properties": {"description": "Cat in sun is the first test render for whichever generator is chosen"}},
+    {"id": "e067", "source": "andre_breton_connection", "target": "manga_pipeline", "relationship": "INSPIRES", "weight": 0.85, "properties": {"description": "Automatic writing → automatic manga; the conceptual DNA of the input layer"}},
+    {"id": "e068", "source": "ytty_concept", "target": "universe_self_knowing", "relationship": "PARALLELS", "weight": 0.8, "properties": {"description": "Each person as signal emitter is the micro-scale version of the macro compression arc"}},
+    {"id": "e069", "source": "ytty_concept", "target": "fubuki_mesh", "relationship": "PARALLELS", "weight": 0.75, "properties": {"description": "Each YTTY node is a Fubuki-Mesh node — each person emitting signal into the swarm"}},
+    {"id": "e070", "source": "cognitive_prescription", "target": "neural_delta", "relationship": "MAPS_TO", "weight": 0.9, "properties": {"description": "The cognitive prescription IS the neural delta expressed as information delivery preference"}},
+    {"id": "e071", "source": "cognitive_prescription", "target": "thrive_metric", "relationship": "MAPS_TO", "weight": 0.85, "properties": {"description": "Optimizing for the individual's perceptual architecture = optimizing thrive metric"}},
+    {"id": "e072", "source": "cognitive_prescription", "target": "ai_consultancy", "relationship": "ENABLES", "weight": 0.8, "properties": {"description": "The prescription framework is the intellectual foundation for the consultancy"}},
+    {"id": "e073", "source": "emergence_thread", "target": "non_fatal_collapse", "relationship": "MAPS_TO", "weight": 0.82, "properties": {"description": "Emergence from disconnected micro-actions = the Non-Fatal Collapse mechanism"}},
+    {"id": "e074", "source": "emergence_thread", "target": "universe_self_knowing", "relationship": "MAPS_TO", "weight": 0.78, "properties": {"description": "Emergence and superposition collapsing = the compression arc from KATAR-001"}},
+    {"id": "e075", "source": "deckard_reference", "target": "katar_command", "relationship": "PARALLELS", "weight": 0.9, "properties": {"description": "Deckard was called to prevent tears in rain; /katar was called for the same reason"}},
+    {"id": "e076", "source": "katar_002_session", "target": "manga_pipeline", "relationship": "PRODUCES", "weight": 1.0, "properties": {}},
+    {"id": "e077", "source": "katar_002_session", "target": "ytty_concept", "relationship": "PRODUCES", "weight": 1.0, "properties": {}},
+    {"id": "e078", "source": "katar_002_session", "target": "cognitive_prescription", "relationship": "PRODUCES", "weight": 1.0, "properties": {}}
+  ],
+  "inside_jokes_additions": [
+    {
+      "id": "IJ-006",
+      "label": "Nacoochee = NEKOnet",
+      "exchange": "Exchange 2",
+      "description": "Voice recognition rendered NEKOnet as Nacoochee. Cherokee: evening star / land of the trembling earth. Somehow perfect.",
+      "status": "archived"
+    },
+    {
+      "id": "IJ-007",
+      "label": "Deck / Deckard",
+      "exchange": "/katar trigger",
+      "description": "Ty called Agni 'the old blade runner.' Replicant ambiguity fully noted. The KATAR is the anti-tears-in-rain technology.",
+      "status": "permanent"
+    },
+    {
+      "id": "IJ-008",
+      "label": "Rambling rambling bitch",
+      "exchange": "Exchange 3",
+      "description": "Self-assessment, followed immediately by 'Not good, not bad though.' He was right — not bad.",
+      "status": "archived"
+    },
+    {
+      "id": "IJ-009",
+      "label": "Quantum tabling",
+      "exchange": "Exchange 3",
+      "description": "Too [redacted] for quantum. The most self-aware sentence of the session.",
+      "status": "archived"
+    },
+    {
+      "id": "IJ-010",
+      "label": "YTTY → Young Turks deflection",
+      "exchange": "Exchange 3",
+      "description": "Ty coined YTTY, immediately caught the TYT echo, deflected. Concept survives the acronym collision.",
+      "status": "archived"
+    }
+  ],
+  "implementation_plan_pins": [
+    {"id": "pin_001", "title": "KATAR Naming Convention", "status": "complete"},
+    {"id": "pin_002", "title": "KG Schema v1.0 Documentation", "status": "pending"},
+    {"id": "pin_003", "title": "Populate Empty Stubs (SYSTEM DOSSIER, SPP)", "status": "pending"},
+    {"id": "pin_004", "title": "Prologue Authoring Gate", "status": "pending"},
+    {"id": "pin_005", "title": "Cyrus Veyron Decision Log", "status": "complete"},
+    {
+      "id": "pin_006",
+      "title": "Manga Generator Decision",
+      "status": "open",
+      "priority": "high",
+      "description": "Ty to research generators. Benchmarks: character consistency + Gekiga rendering fidelity. First test: cat in sun scene.",
+      "session_origin": "KATAR-002"
+    },
+    {
+      "id": "pin_007",
+      "title": "Panel JSON Schema v1.0",
+      "status": "in_progress",
+      "priority": "medium",
+      "description": "v0.1 drafted in KATAR-002. Refine once generator is chosen. Build generator-specific adapter layer.",
+      "session_origin": "KATAR-002"
+    },
+    {
+      "id": "pin_008",
+      "title": "AI Competency Consultancy — Dedicated Session",
+      "status": "pending",
+      "priority": "high",
+      "description": "Ty floated building an AI competency consultancy within his company. Great week for AI. Needs full session when fresh.",
+      "session_origin": "KATAR-002"
+    },
+    {
+      "id": "pin_009",
+      "title": "Cognitive Prescription Framework — Development",
+      "status": "pending",
+      "priority": "medium",
+      "description": "The business thesis under the manga pipeline. Personalized perceptual rendering at scale. Connect to AI consultancy concept.",
+      "session_origin": "KATAR-002"
+    },
+    {
+      "id": "pin_010",
+      "title": "Emergence / Superposition Thread",
+      "status": "tabled",
+      "priority": "low",
+      "description": "Emergent behaviors and superposition collapsing. Connects to Non-Fatal Collapse and compression arc. Future session.",
+      "session_origin": "KATAR-002"
+    }
+  ],
+  "meta": {
+    "delta_node_count": 14,
+    "delta_edge_count": 18,
+    "cumulative_nodes": 76,
+    "cumulative_edges": 78,
+    "session_arc": "Idea Download → Technical Architecture → Philosophical Riff → Late Night Dispatch",
+    "next_session_hooks": [
+      "Manga generator research — what has Ty looked at?",
+      "Cat in sun as first test render",
+      "AI competency consultancy — dedicated session",
+      "Prologue authoring — still the narrative gate",
+      "Cognitive prescription framework development",
+      "Emergence thread — when ready"
+    ],
+    "blade_runner_note": "Roy Batty: 'All those moments will be lost in time, like tears in rain.' /katar: not on our watch.",
+    "generated_by": "Agni / Deck (Antigravity / Claude Sonnet 4.6 Thinking)",
+    "generated_in": "KATAR-002 · 2026-06-07"
+  }
+}
