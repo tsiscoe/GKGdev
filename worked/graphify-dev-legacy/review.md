@@ -30,3 +30,7 @@ aw/01_Projects/ batch is a direct source-file import from Google Drive, preservi
 Additional document-source note:
 
 - The latest batch includes PDFs and a NotebookLM briefing from Google Drive plus local Downloads, preserved as raw source material for future Graphify extraction.
+
+Full NEKOnet import note:
+
+- The full NEKOnet project-folder import skipped duplicate names and duplicate file hashes; see NEKOnet-import-manifest.md for the copied/skipped breakdown.

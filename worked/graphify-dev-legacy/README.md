@@ -34,3 +34,8 @@ Additional document import:
 aw/01_Projects/,
 aw/05_tbd/, and
 aw/Downloads/`n
+
+Full NEKOnet folder import:
+
+- remaining unique files from the full G:/My Drive/01_Projects/NEKOnet folder, with same-name and same-content duplicates skipped
+- import details recorded in NEKOnet-import-manifest.md
