@@ -16,3 +16,8 @@ Known limitations:
 Suggested next step:
 
 Run `graphify extract worked/graphify-dev-legacy/raw --force` and commit the resulting `graphify-out` or curated outputs if this becomes an official worked example.
+
+Additional note:
+
+- The
+aw/00_Inbox/ batch is a direct source-file import from Google Drive and has not been curated beyond exact-file selection.
