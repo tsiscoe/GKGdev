@@ -1,0 +1,11 @@
+Create a professional 16:9 slide presentation in a technical blueprint style. The slides should visualize the content clearly with diagrams, annotated labels, and structured layouts. Include the following elements where appropriate: titles, bullet points, arrows, measurement lines, and highlighted key components. Use a modern, clean, and technical design theme, with high contrast text and visuals suitable for engineering, design, or scientific presentations. Ensure the layout is organized, visually balanced, and easy to understand. Output should be Google Slides-ready and fully editable.
+
+Content to include: {Insert your content, text, or key points here}
+
+Style requirements:
+
+Technical blueprint or diagram style (similar to engineering or scientific schematics)
+Clear labeling of all components with lines or arrows
+Use minimal color palette (preferably blue, white, and accents)
+Include structural or functional highlights visually
+Maintain logical flow from slide to slide"

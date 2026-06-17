@@ -34,3 +34,7 @@ Additional document-source note:
 Full NEKOnet import note:
 
 - The full NEKOnet project-folder import skipped duplicate names and duplicate file hashes; see NEKOnet-import-manifest.md for the copied/skipped breakdown.
+
+Document/style prompt note:
+
+- This batch imports Tools for Thought plus Style Prompts assets and removes the two previously committed large NEKOnet videos from the active tree; see document-style-import-manifest.md for copied/skipped details.

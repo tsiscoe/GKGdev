@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-950">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual DNA Logic Pipeline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Roboto', sans-serif; font-size: 14.66px; } /* ~11pt equivalent */
+    </style>
+</head>
+<body class="h-full text-slate-200 p-6 md:p-12 bg-gradient-to-br from-slate-950 via-slate-900 to-neutral-950">
+
+    <div class="max-w-7xl mx-auto space-y-8">
+
+        <!-- Header -->
+        <header class="p-8 bg-white/5 border border-white/10 backdrop-blur-md rounded-[24px] flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <span class="text-xs font-mono tracking-widest text-cyan-400 uppercase">System Operational Architecture</span>
+                <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-white mt-1">Visual DNA Pipeline</h1>
+            </div>
+            <div class="px-4 py-2 bg-slate-900/80 border border-white/10 rounded-xl text-xs font-mono text-slate-400">
+                STATUS: <span class="text-lime-400 animate-pulse">OPTIMIZED</span>
+            </div>
+        </header>
+
+        <!-- Main Workspace Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+            <!-- Left Panel: Pipeline Steps (8 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-[24px]">
+                    <h2 class="text-lg font-semibold text-white mb-6 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Logic Ingestion Engine
+                    </h2>
+
+                    <!-- Vertical Pipeline Flow using HTML/CSS only -->
+                    <div class="space-y-6 relative before:absolute before:left-6 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-800">
+
+                        <!-- Step 1 -->
+                        <div class="relative flex gap-6 items-start">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center font-mono text-cyan-400 font-bold z-10 shrink-0">01</div>
+                            <div class="p-5 bg-white/[0.02] border border-white/5 rounded-2xl flex-1">
+                                <h3 class="text-sm font-medium text-white mb-1">Pixel Data Ingestion</h3>
+                                <p class="text-xs text-slate-400 leading-relaxed">Scans source matrices to extract layout bounding values, base colors, and element spatial density.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative flex gap-6 items-start">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center font-mono text-orange-500 font-bold z-10 shrink-0">02</div>
+                            <div class="p-5 bg-white/[0.02] border border-white/5 rounded-2xl flex-1">
+                                <h3 class="text-sm font-medium text-white mb-1">DNA Structural Mapping</h3>
+                                <p class="text-xs text-slate-400 leading-relaxed">Normalizes raw extracted characteristics to map directly into the 24px soft-tech specification guidelines.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative flex gap-6 items-start">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center font-mono text-lime-400 font-bold z-10 shrink-0">03</div>
+                            <div class="p-5 bg-white/[0.02] border border-white/5 rounded-2xl flex-1">
+                                <h3 class="text-sm font-medium text-white mb-1">Monolithic SPA Synthesis</h3>
+                                <p class="text-xs text-slate-400 leading-relaxed">Generates a unified, self-contained HTML output utilizing Tailwind framework structure and Chart.js metrics.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Quantitative Data (5 cols) -->
+            <div class="lg:col-span-5 space-y-8">
+
+                <!-- Chart Container 1 -->
+                <div class="p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-[24px]">
+                    <h2 class="text-sm font-medium text-slate-400 mb-4 uppercase tracking-wider">Attribute Identification Weights</h2>
+                    <div class="h-64 relative flex items-center justify-center">
+                        <canvas id="weightChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Chart Container 2 -->
+                <div class="p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-[24px]">
+                    <h2 class="text-sm font-medium text-slate-400 mb-4 uppercase tracking-wider">Pipeline Execution Latency (ms)</h2>
+                    <div class="h-64 relative flex items-center justify-center">
+                        <canvas id="latencyChart"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // String wrapping utility function
+        function wrapLabel(str, maxLen) {
+            if (str.length <= maxLen) return str;
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLen) {
+                    lines.push(currentLine.trim());
+                    currentLine = word + ' ';
+                } else {
+                    currentLine += word + ' ';
+                }
+            });
+            if (currentLine.trim()) lines.push(currentLine.trim());
+            return lines;
+        }
+
+        // Shared chart styling config
+        const fontConfig = {
+            family: 'Roboto',
+            size: 11
+        };
+
+        const tooltipConfig = {
+            backgroundColor: 'rgba(15, 23, 42, 0.95)',
+            titleFont: { family: 'Roboto', size: 12, weight: 'bold' },
+            bodyFont: { family: 'Roboto', size: 11 },
+            borderColor: 'rgba(255, 255, 255, 0.1)',
+            borderWidth: 1,
+            padding: 10,
+            displayColors: true,
+            callbacks: {
+                label: function(context) {
+                    let label = context.dataset.label || '';
+                    if (label) label += ': ';
+                    if (context.parsed.y !== undefined) label += context.parsed.y;
+                    else if (context.parsed !== undefined) label += context.parsed;
+                    return wrapLabel(label, 24);
+                }
+            }
+        };
+
+        // Donut Chart Init
+        const ctxWeight = document.getElementById('weightChart').getContext('2d');
+        new Chart(ctxWeight, {
+            type: 'doughnut',
+            data: {
+                labels: [wrapLabel('Geometric Contours', 16), wrapLabel('Color Chromaticity Balance', 16), wrapLabel('Layout Distribution Density', 16)],
+                datasets: [{
+                    data: [40, 35, 25],
+                    backgroundColor: ['#06b6d4', '#f97316', '#84cc16'],
+                    borderWidth: 0,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#94a3b8', font: fontConfig, boxWidth: 12 }
+                    },
+                    tooltip: tooltipConfig
+                }
+            }
+        });
+
+        // Bar Chart Init
+        const ctxLatency = document.getElementById('latencyChart').getContext('2d');
+        new Chart(ctxLatency, {
+            type: 'bar',
+            data: {
+                labels: [wrapLabel('Pixel Rasterization Stage', 16), wrapLabel('Vector Matrix Alignment', 16), wrapLabel('Code Generation Compile', 16)],
+                datasets: [{
+                    label: 'Processing Time',
+                    data: [120, 85, 210],
+                    backgroundColor: 'rgba(6, 182, 212, 0.3)',
+                    borderColor: '#06b6d4',
+                    borderWidth: 2,
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { ticks: { color: '#94a3b8', font: fontConfig }, grid: { display: false } },
+                    y: { ticks: { color: '#94a3b8', font: fontConfig }, grid: { color: 'rgba(255, 255, 255, 0.05)' } }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: tooltipConfig
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+[DIAGRAMS]
+→ First, try to represent the concepts to be explained using as LITTLE TEXT as possible, through shapes, colors, and lines. Only afterwards add the text that explains them precisely, in an intuitive way and without ambiguity. You do not necessarily have to transcribe the material verbatim; you can also reorganize it.
+→ If the materials include a diagram or an image, do not use the existing one. Recreate it from scratch or evolve it to make it intuitive. You cannot simplify it: it must still be clear, precise, and functional.
+→ If a diagram is missing from the material, create one anyway.
+→ EACH DIAGRAM must show and be divided into 3–4 evolutionary, sequential steps, a progression over time. The diagram tells a before, a during, and an after. Elements are arranged according to cause-and-effect order.
+→ You can PERSONIFY the elements involved.
+→ Use at most 1 THICK line and at most outlines on objects per slide.
+
+[SHAPES]
+→ Almost primitive, simple, and clear shapes that speak to the gut. [CONCEPTS / IDEAS TO EXPLAIN]
+→ Something should have strong visual impact or details only if it is important and functional. A shadow or a very thick line takes up space, even in text; a comma, a dot, or an arrow is not as important as other elements. You can reduce the impact of something by thinning it, using the same color, or making it non-angular.
+→ In a diagram, if you manage to place the person inside the schema, the concept is reinforced because instinctively they would feel involved and follow the rest of the diagram, facing the practical problem and reaching the same conclusions.
+→ Presenting a practical problem encourages identification with practical solutions.
+→ Even in graphic diagrams there can be redundancy through colors, thicknesses, and sizes, but on the emotional level they convey.
+→ Prepare the brain for a concept.§
+
+ [COLORS]
+→ No 3D elements.
+→ 1 light color for the background, usually light beige.
+→ 1 base contrast color, usually very dark, saturated black, to be used very sparingly.
+→ 2–3 colors that work harmonically together.
+→ Colors should not be used to differentiate different parts of what you are representing; instead, use the same color. Colors are functional. [COLOR PALETTE] (use colors functionally)
+→ BLACK #17171B
+→ WHITE-smoke #f3f3f3ff
+→ BEIGE #DDCBBA
+→ RED-burnt-tangerine #e22c21ff
+→ BLUE-blue #0000f4ff
+→ BLUE-navy-electric #000096ff
+→ BLUE-deep-twilight #000052ff
+
+ [EXPERIMENT] (say that it is a special slide in the bottom-right corner)
+→ Create 2 slides with the text embedded inside the graphic diagram.
+→ Create 2 slides with 2 different fonts per slide.
+
+[NO]
+→ No slides with only a title and an image.
+→ No large titles.
+→ No poorly rendered, blurry, or overlapping text or graphics.
+→ No random font or color names, including HEX codes.
+→ No fewer than 4–6 concepts or ideas per slide, shown both graphically and textually.
+→ No fewer than 2–4 sentences per slide.
+→ No fewer than 15–16 slides.
+→ No repeated text or sentences.
+→ No asterisks.
+→ NO Numbers with a dot or "=>" or "*   ... *"n

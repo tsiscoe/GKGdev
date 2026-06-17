@@ -39,3 +39,9 @@ Full NEKOnet folder import:
 
 - remaining unique files from the full G:/My Drive/01_Projects/NEKOnet folder, with same-name and same-content duplicates skipped
 - import details recorded in NEKOnet-import-manifest.md
+
+Document and style prompt import:
+
+- selected Tools for Thought and Style Prompts files imported as raw source material
+- two large NEKOnet video files were removed from the branch before this import
+- import details recorded in document-style-import-manifest.md
