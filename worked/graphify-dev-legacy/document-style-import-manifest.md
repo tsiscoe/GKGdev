@@ -1,10 +1,11 @@
 # Document and Style Prompt Import Manifest
 
-Sources: G:/My Drive/Documents and C:/Users/tysis/OneDrive/Scripts/Style Prompts
+Sources: G:/My Drive/Documents, C:/Users/tysis/OneDrive/Documents, and C:/Users/tysis/OneDrive/Scripts/Style Prompts
 
 ## Copied
 
 - Documents\Tools for Thought.pdf
+- Documents\Codex Aletheia v2.docx
 - Style Prompts\visual_dna_logic.html
 - Style Prompts\Bizgrade Professional.md
 - Style Prompts\Constructivism  Tech-Art  Avant-Garde.txt

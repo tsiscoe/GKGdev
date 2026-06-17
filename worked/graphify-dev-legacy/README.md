@@ -20,20 +20,15 @@ Intentionally excluded:
 
 Additional inbox import:
 
-- selected G:/My Drive/00_Inbox source files as
-aw/00_Inbox/`n
+- selected G:/My Drive/00_Inbox source files as raw/00_Inbox/
 
 Additional project import:
 
-- selected G:/My Drive/01_Projects source files as
-aw/01_Projects/`n
+- selected G:/My Drive/01_Projects source files as raw/01_Projects/
 
 Additional document import:
 
-- selected PDF and NotebookLM files as
-aw/01_Projects/,
-aw/05_tbd/, and
-aw/Downloads/`n
+- selected PDF and NotebookLM files as raw/01_Projects/, raw/05_tbd/, and raw/Downloads/
 
 Full NEKOnet folder import:
 
@@ -42,7 +37,7 @@ Full NEKOnet folder import:
 
 Document and style prompt import:
 
-- selected Tools for Thought and Style Prompts files imported as raw source material
+- selected Tools for Thought, Codex Aletheia, and Style Prompts files imported as raw source material
 - two large NEKOnet video files were removed from the branch before this import
 - import details recorded in document-style-import-manifest.md
 

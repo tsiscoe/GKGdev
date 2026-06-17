@@ -19,13 +19,11 @@ Run `graphify extract worked/graphify-dev-legacy/raw --force` and commit the res
 
 Additional note:
 
-- The
-aw/00_Inbox/ batch is a direct source-file import from Google Drive and has not been curated beyond exact-file selection.
+- The raw/00_Inbox/ batch is a direct source-file import from Google Drive and has not been curated beyond exact-file selection.
 
 Additional project-source note:
 
-- The
-aw/01_Projects/ batch is a direct source-file import from Google Drive, preserving MilTech, AI Dev, and NEKOnet grouping.
+- The raw/01_Projects/ batch is a direct source-file import from Google Drive, preserving MilTech, AI Dev, and NEKOnet grouping.
 
 Additional document-source note:
 
@@ -37,7 +35,7 @@ Full NEKOnet import note:
 
 Document/style prompt note:
 
-- This batch imports Tools for Thought plus Style Prompts assets and removes the two previously committed large NEKOnet videos from the active tree; see document-style-import-manifest.md for copied/skipped details.
+- This batch imports Tools for Thought, Codex Aletheia, and Style Prompts assets and removes the two previously committed large NEKOnet videos from the active tree; see document-style-import-manifest.md for copied/skipped details.
 
 Claude/NotebookLM note:
 
